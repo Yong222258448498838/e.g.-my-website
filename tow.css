@@ -7,26 +7,45 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+   
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+   
+    overflow: auto;
+    scrollbar-gutter: stable; /* Ensures space for the scrollbar, even when not visible */
+   
+    padding: 10px
 }
-
+.text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin: 20px;
+    height: 2vb;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+   height: 5vb;
+}
 .image-container {
-    text-align: center;
+    margin: 5px 0;
+    width: 500px;
+    height: 150px;
 }
 
 .redirect-image {
-    width: 50%;
+    width: 100%;
     max-width: 500px;  /* Set maximum width of the image */
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .redirect-image:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 30px 55px rgba(0, 0, 0, 0.2);
 }
